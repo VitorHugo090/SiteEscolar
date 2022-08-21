@@ -22,48 +22,57 @@
     <style>
         
        body{
-        font-family: 'Roboto Slab', 'serif';
-        background-color: #23f13f;
+        font-family: 'Montserrat', ;
+        background-color: #5F95E0;
        }
 
         #logogoverno{
             position: absolute;
-            top: 10px;
-            width: 240px;
-            left: 1510px;
+            top: 40px;
+            width: 160px;
+            left: 275px;
         }
         #logoinsta{
             position: absolute;
-            top: 10px;
-            width: 40px;
-            left: 1445px;
+            top: 100px;
+            left: 1750px;
         }
        #logoface{
-           background-color: #23f13f;
             position: absolute;
-            top: 10px;
-            width: 100px;
-            left: 1340px;
+            top: 100px;
+            left: 1700px;
        }
-        #imagemzap{
+        #logozap{
             position: absolute;
-            top: 10px;
-            width: 40px;
-            left: 1300px;
+            top: 100px;
+            left: 1650px;
         }
        #logoimagem{
            position: absolute;
-           max-width: 800px;
+           max-width: 300px;
         
-           left: 200px;
+           left: 0.1px;
        }
        
 
        nav {
            position: absolute;
 
-           background-color: blue;
+           background-color: #132174;
        }
+       .nav-item {
+          position: relative;
+          left: 850px;
+       }
+	   
+	   #carouselExampleCaptions{
+		width: 1000px;
+		position: relative;
+		left: 400px;
+		
+	   }
+	   
+	   
 
       /*Edição do menu */
    /*  nav {
@@ -82,8 +91,7 @@
         border: 1px solid #c0c0c0;   
         float:left;  
         top: 149px;
-    
-    position: absolute;
+		position: absolute;
         top: 149px;
         color: var(--bs-gray-800);
         background-color: var(--bs-gray-100);
@@ -122,6 +130,13 @@
 #menu-h ul li a:hover {
             background-color: rgb(24, 139, 233);
                         }
+						
+#navbarsExample05{
+		position: absolute;
+		left: 500px;
+}
+
+						
 
 */                        
  /* Barra de materia    */
@@ -142,7 +157,6 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  
   height: 32rem;
 }
 .carousel-item > img {
@@ -153,6 +167,23 @@
   max-height: 32rem;
 }
 
+/* Cards de perfil */
+#titulo_card > h1{
+  text-align: center;
+  
+  }
+  .col{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  padding: 40px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+  
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -227,25 +258,30 @@
         <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
           <svg class="bi me-2" width="40" height="130" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
         </a>
-          <img src="data:image/png;base64,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" id="logoimagem"/>
+          <img src="download-removebg-preview.png" id="logoimagem"/>
         <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
           <li>
             <a href="#" class="nav-link text-secondary">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-              <img src="https://logospng.org/download/whatsapp/logo-whatsapp-preto-branco-512.png"  alt="" id="imagemzap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" id="logozap" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+              </svg>
             </a>
           </li>
           <li>
             <a href="#" class="nav-link text-white">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-               <img src="data:image/png;base64,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" alt="" id="logoface"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-facebook" id="logoface" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
             </a>
           </li>
           <li>
             <a href="#" class="nav-link text-white">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="" id="logoinsta">
-            </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-instagram" id="logoinsta" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg></a>
           </li>
             <a href="#" class="nav-link text-white">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
@@ -317,60 +353,90 @@
     </div>
   </nav>
 
-  
-<div id="carousel">
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner" id="imgcaiado">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect    fill="#FFEC00" /></svg>
-        <img src="https://scontent.fgyn2-1.fna.fbcdn.net/v/t1.6435-9/199146254_778346639540438_5909205008043896359_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=8bfeb9&_nc_eui2=AeFsNdX2shLSNO4LIUoQEUNTeuFADqo_Yjt64UAOqj9iO_AQAYzcoTDogrmsD1oFixUEBxb_IetG8CsEnSucBOTc&_nc_ohc=kVAEZOEJQj8AX94HFX7&tn=-Fd18AgPRyKtAOJw&_nc_ht=scontent.fgyn2-1.fna&oh=00_AT9fDKhRM-nvgDOuSs-3v4auzT5tZ8j20XawdjIa0Weibg&oe=62AB005F" class="d-block w-100" alt=""> 
-        <div class="container">
-          <div class="carousel-caption text-start">
-           <h1>Visita de Caiado a Escola</h1>
-            <p>Caiado faz visita a escola em comemoração a volta as aulas presenciais</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="400px"  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#FFEC00"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="400px"  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#FFEC00"/></svg>
-        <img src="https://scontent.fgyn2-1.fna.fbcdn.net/v/t1.6435-9/199146254_778346639540438_5909205008043896359_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=8bfeb9&_nc_eui2=AeFsNdX2shLSNO4LIUoQEUNTeuFADqo_Yjt64UAOqj9iO_AQAYzcoTDogrmsD1oFixUEBxb_IetG8CsEnSucBOTc&_nc_ohc=kVAEZOEJQj8AX94HFX7&tn=-Fd18AgPRyKtAOJw&_nc_ht=scontent.fgyn2-1.fna&oh=00_AT9fDKhRM-nvgDOuSs-3v4auzT5tZ8j20XawdjIa0Weibg&oe=62AB005F" class="d-block w-100" alt="">  
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
-        </div>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://blog.redebatista.edu.br/wp-content/uploads/2020/03/original-5163ba17ddbf11f7562a4c18a7f7cbb6.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>1° Primeira Materia</h5>
+		<p>First slide label</p>
+       
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="carousel-item">
+      <img src="https://horario.com.br/wp-content/uploads/2019/09/05_geha_blog_impacto_horario_escolar.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>2 º - Segunda materia</h5>
+        <p>Segunda materia</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://tvuniaobrasilia.com.br/wp-content/uploads/2021/04/9.4.-Escola-Classe-05.-Foto-Acacio-Pinheiro-Agencia-Brasilia.-6.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>3º materia - Terceira Materia</h5>
+        <p>Terceira Materia</p>
       </div>
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+
+<div id="titulo_card">
+  <h1>Conheça nossos Professores</h1>
+
+<div id="card-group" class="row row-cols-2 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card card-body">
+      <img src="https://img.freepik.com/fotos-gratis/jovem-em-uma-camisa-trabalhando-no-laptop-roxo_155003-14131.jpg?w=1380&t=st=1661067636~exp=1661068236~hmac=1405ccfabddb6e32df365c41d2a1e47168d0c207bb287856b77e25e59cd0c3ce" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-body">
+      <img src="https://img.freepik.com/fotos-gratis/estilo-de-vida-beleza-e-moda-conceito-de-emocoes-de-pessoas-jovem-gerente-de-escritorio-feminino-asiatico-ceo-com-expressao-satisfeita-em-pe-sobre-um-fundo-branco-sorrindo-com-os-bracos-cruzados-sobre-o-peito_1258-59329.jpg?w=1380&t=st=1661067681~exp=1661068281~hmac=51f04679d207dd06f1e0b75f3a749b33e81164d9f7327f508ddcd7330cff0f35" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-body">
+      <img src="https://img.freepik.com/fotos-gratis/estilo-de-vida-beleza-e-moda-conceito-de-emocoes-de-pessoas-jovem-gerente-de-escritorio-feminino-asiatico-ceo-com-expressao-satisfeita-em-pe-sobre-um-fundo-branco-sorrindo-com-os-bracos-cruzados-sobre-o-peito_1258-59329.jpg?w=1380&t=st=1661067681~exp=1661068281~hmac=51f04679d207dd06f1e0b75f3a749b33e81164d9f7327f508ddcd7330cff0f35" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card card-body">
+      <img src="https://img.freepik.com/fotos-gratis/conceito-de-felicidade-bem-estar-e-confianca-mulher-afro-americana-atraente-alegre-corte-de-cabelo-encaracolado-peito-de-bracos-cruzados-em-pose-poderosa-e-segura-sorrindo-determinado-usar-sueter-amarelo_176420-35063.jpg?w=1380&t=st=1661067729~exp=1661068329~hmac=f611a4508467539e333334f3bd025da6c0e1c93ae6dbaf531aca891307aab565" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+</div>
+</div> 
+
+
 <!--
     <div id="paginainicialmaterias">
         <h2>
